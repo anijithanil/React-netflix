@@ -1,0 +1,98 @@
+.row {
+    margin-left: 10px;
+    color: #fff;
+
+}
+.row h1{
+    color: #ffffff;
+    text-align: left;
+}
+.posters {
+    display: flex;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   
+    
+
+}
+.posters::-webkit-scrollbar {
+    display: none;
+}
+.poster {
+    max-height: 250px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.smallPoster {
+    max-height: 150px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.poster:hover {
+    transform: scale(1.2);
+    transition-duration:0.5s ;
+}
+.smallPoster:hover {
+    transform: scale(1.2);
+    transition-duration:0.5s ;
+}
+
+.container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #03040468;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /* heart button */
+  /* .like-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 23px;
+    top: 12px;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .like-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .heart-icon {
+    width: 5px;
+    height: 5px;
+    fill: white;
+  }
+  
+  .like-button.liked .heart-icon {
+    fill: red;
+  } */
